@@ -31,8 +31,9 @@ if Helpers.new.is_logged_in?
   end
 
   get '/logout' do
-    
+    session.clear
 
+    redirect "/"
   end
 
 
